@@ -1,13 +1,14 @@
 ---
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css"
 const pageTitle = "Home"
 
 ---
 
 <body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+  <Header />
 
   <h1>My Astro Site</h1>
   <h1>My Astro Learning Blog</h1>
@@ -17,5 +18,8 @@ const pageTitle = "Home"
     <li><a href="/posts/post-2">post-2</a></li>
     <li><a href="/posts/post-3">post-3</a></li>
   </ul>
-
+  <Footer />
+<script>
+  import "../scripts/menu.js"
+</script>
 </body>
